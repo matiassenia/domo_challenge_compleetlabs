@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --bg-body: #283346;
+    --primary-color: #386ff7;
+    --section-color:#3871ff;
+    --button-color:#376ef8;
+    --color-a-1:#979ca4;
+    --font-size-p: 20px;
+    --font-size-t: 40px;
+    --font-color-1: #979ca4;
+}
+
+body {
+    background-image: url('/images/asset-background.jpg'); /* Ruta a tu imagen de fondo */
+    background-color: var(--bg-body);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    color: var(--bg-body);
+    font-family: 'Montserrat';
+    margin: auto;
+    padding: auto;
+    font-optical-sizing: auto;
+    height: auto;
+    font-size: var(--font-size-p);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--bg-body);    
+}
+
+.body{
+    background-color: var(--bg-body);
+}
+
+
+/*-------- nav -----------*/
+
+nav {
+    
+    margin: auto;
+}
+
+#navbar-brand{
+    color: white;
+    background-color: var(--bg-body);
+}
+
+nav.bg-gym{
+    
+    background-color: transparent;
+}
+
+
+nav.bg-gym a{
+    color: var(--font-color-1);
+    font-size: 18px;
+}
+
+.navbar-nav a:hover::after{
+    background:white;
+    width: 40%;
+
+}
+
+nav.bg-gym a:hover{
+    color: white;
+}
+
+/* -------- Hero -------- */
+
+.container{
+    padding: 80px 0 80px 0;
+}
+
+.container .row{
+    width: 100%;
+    font-size: var(--font-size-p);   
+}
+
+article h1 {
+    top: 110px;
+    color: white;
+    font-family: 'Montserrat';
+
+}
+
+article p {
+    color: var(--font-color-1) ;
+}
+
+
+.row button {
+    background-color: transparent; 
+    border: 1px solid var(--color-a-1);
+    color: var(--color-a-1);
+    margin-right: 15px;
+
+} 
+
+.row button:hover {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+}
+
+/* ------- intro card -------*/
+
+.row{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.row-intro-card{
+    align-items: center;
+    text-align: center;
+    height: 40vw;
+    margin: auto;
+    
+}
+
+
+.row h6 {
+    color: white;
+    font-size: 28px;
+    font-family: 'Montserrat';
+}
+
+.row p{
+    color: var(--font-color-1);
+    font-size: var(--font-size-p);
+}
+
+/*-------card group---------*/
+
+.card-group{
+    left: 5%;
+    right: 5%;
+    top: 65vw;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;    
+    border-radius: 0; 
+}
+
+.card{
+    margin-right: 10px;
+    width: 100vh;
+    max-width: 400px; /* Ancho máximo de las tarjetas */
+    min-width: 250px;
+    margin-bottom: 20px;
+    min-height: 380px;
+    max-height: 1500px;
+
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card-body h5{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    height: 30%;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: var(--font-size-p);
+}
+
+.card-body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.card-title{
+    display: flex;
+    text-align: center;
+}
+
+.card-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    color: var(--font-color-1);
+    
+    height: 100%;
+    
+}
+
+.card-body a{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.card-body a {
+    background-color: transparent; 
+    border: 1px solid var(--color-a-1);
+    color: var(--color-a-1);
+    margin-right: 15px;
+
+} 
+
+.card-body a:hover {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+}
+
+
+/*------------section icons---------------*/
+.icon-p{
+    left: 4%;
+    right: 4%;
+    display: flex;
+    max-width: 50%;
+    padding: 0% 5%;
+    flex-direction: column;
+    font-family:'Montserrat' ;
+    
+}
+
+.icon-p h4{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.icon-p p{
+    color: var(--font-color-1);
+    font-size: 18px;
+}
+
+
+.icon-group{
+    left: 4%;
+    right: 4%;
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color); 
+    
+}
+
+
+.icon{
+    display: flex;
+    justify-content: space-around;
+    width: 55px;
+    height: 55px;
+    background-color: transparent;
+
+}
+
+
+
+.icon-column {
+    margin-left: 4%;
+    margin-right: 4%;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+
+.icon svg path {
+    fill: white;
+}
+
+
+/*--------media querys---------*/
+
+@media (max-width: 2560px){
+    .row-intro-card {
+        align-items: center;
+        text-align: center;
+        height: 25vw;
+    }
+    .card-group {
+        top: 40vw;
+    }
+    .icon-group{
+        height: 40vw;
+        right: 4%;
+        left: 4%;
+        }  
+}
+
+@media (max-width: 1440px){
+    .row-intro-card {
+        align-items: center;
+        text-align: center;
+        height: 35vw;
+        margin: auto;
+    }
+    .card-group {
+        top: 60vw;
+    }
+    .icon-group{
+        height: 40vw;
+        right: 4%;
+        left: 4%;
+        } 
+}
+
+@media (max-width: 1240px){
+    .row-intro-card {
+        align-items: center;
+        text-align: center;
+        height: 50vw;
+        margin: auto;
+    }
+    .card-group {
+        top: 60vw;
+    }
+}
+
+@media (max-width: 1024px){
+    .row-intro-card {
+        align-items: center;
+        text-align: center;
+        height: 50vw;
+        margin: auto;
+    }
+    .card-group {
+        top: 95vw;
+    }
+    .icon-group{
+        height: 70vw;
+        right: 4%;
+        left: 4%;
+        }  
+}
+
+@media (max-width: 995px) {
+    .card-group {
+        top: 100vw;
+    }
+    .row-intro-card {
+        height: 50vw;
+        }
+}
+
+@media (max-width: 798px) {
+    .card-group {
+        top: 110vw;
+    }
+    .row-intro-card {
+        height: 70vw;
+        }
+
+    .icon-group{
+        height: 80vw;
+        right: 4%;
+        left: 4%;
+        }    
+}
+
+
+
+
+
+@media (max-width: 425px) {
+    .card-group {
+        position: relative;
+        left: 5%;
+        right: 5%;
+        top: 0.1vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        max-width: 90%;
+        min-height: 30px;
+        max-height: 300px;
+    }
+    .container .row{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .row .btn{
+        left: 0;
+        right: 0;
+        margin: 0px;
+        width: 100%;
+    }
+    .row a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .row h1{
+        text-align: center;
+        
+    }
+    .row p{
+        width: 100%;
+        text-align: center;
+    }
+    .row-intro-card {
+        width: 100%;
+        }
+
+    .icon-group{
+        height: 180vw;
+        right: 5%;
+        left: 5%;
+        flex-direction: column;
+        }
+    .icon-p{
+        display: flex;
+        justify-content: center;
+        max-width: none;
+        font-size: 14px;
+    }  
+    .icon-column{
+        max-width: none;
+    }
+}
