@@ -289,6 +289,51 @@ article p {
     fill: white;
 }
 
+/*---------section corp----------*/
+
+.corp-group{
+    top: 10%;
+    height: 30vw;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+.corp-group .corp-title{
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corp-title h6{
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    color: var(--color-a-1);
+}
+
+.corp-fil{
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.logo-corp {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 55px;
+    height: 55px;
+    background-color: transparent;
+}
+
+.logo-corp svg path {
+    fill: rgba(128, 128, 128, 0.5); /* Gris con 50% de opacidad */
+    
+}
+
+
 
 /*--------media querys---------*/
 
@@ -394,7 +439,7 @@ article p {
     .card{
         max-width: 90%;
         min-height: 30px;
-        max-height: 300px;
+        max-height: 700px;
     }
     .container .row{
         width: 100%;
@@ -428,11 +473,12 @@ article p {
         }
 
     .icon-group{
-        height: 180vw;
+        height: 360vw;
         right: 5%;
         left: 5%;
         flex-direction: column;
         }
+
     .icon-p{
         display: flex;
         justify-content: center;
@@ -441,5 +487,13 @@ article p {
     }  
     .icon-column{
         max-width: none;
+    }
+    .corp-group{
+        top: 10%;
+        height: 80vw;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+    
     }
 }
