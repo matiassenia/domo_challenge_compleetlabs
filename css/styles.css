@@ -18,7 +18,7 @@
 }
 
 body {
-    background-image: url('/images/asset-background.jpg'); /* Ruta a tu imagen de fondo */
+    background-image: url('images/asset-background.jpg');
     background-color: var(--bg-body);
     background-size: contain;
     background-position: right;
