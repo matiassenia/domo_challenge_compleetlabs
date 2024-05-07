@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
 }
 
 :root {
@@ -17,6 +15,7 @@
     --font-color-1: #979ca4;
 }
 
+/*------------- body --------------*/
 body {
     background-image: url('/images/asset-background.jpg');
     background-color: var(--bg-body);
@@ -42,10 +41,7 @@ body, html {
 .body{
     background-color: var(--bg-body);
 }
-
-
-/*-------- nav -----------*/
-
+/*------------ nav -----------*/
 nav {
     
     margin: auto;
@@ -61,7 +57,6 @@ nav.bg-gym{
     background-color: transparent;
 }
 
-
 nav.bg-gym a{
     color: var(--font-color-1);
     font-size: 18px;
@@ -70,14 +65,13 @@ nav.bg-gym a{
 .navbar-nav a:hover::after{
     background:white;
     width: 40%;
-
 }
 
 nav.bg-gym a:hover{
     color: white;
 }
 
-/* -------- Hero -------- */
+/* ----------- Hero ------------ */
 
 .container{
     padding: 80px 0 80px 0;
@@ -92,20 +86,17 @@ article h1 {
     top: 110px;
     color: white;
     font-family: 'Montserrat';
-
 }
 
 article p {
     color: var(--font-color-1) ;
 }
 
-
 .row button {
     background-color: transparent; 
     border: 1px solid var(--color-a-1);
     color: var(--color-a-1);
     margin-right: 15px;
-
 } 
 
 .row button:hover {
@@ -114,7 +105,7 @@ article p {
     border: none;
 }
 
-/* ------- intro card -------*/
+/* ---------- intro card ----------*/
 
 .row{
     padding-top: 15px;
@@ -128,7 +119,6 @@ article p {
     margin: auto;
     
 }
-
 
 .row h6 {
     color: white;
@@ -161,7 +151,6 @@ article p {
     margin-bottom: 20px;
     min-height: 380px;
     max-height: 1500px;
-
 }
 
 .card:last-child {
@@ -196,8 +185,7 @@ article p {
     font-size: 16px;
     color: var(--font-color-1);
     
-    height: 100%;
-    
+    height: 100%;    
 }
 
 .card-body a{
@@ -211,7 +199,6 @@ article p {
     border: 1px solid var(--color-a-1);
     color: var(--color-a-1);
     margin-right: 15px;
-
 } 
 
 .card-body a:hover {
@@ -219,7 +206,6 @@ article p {
     color: white;
     border: none;
 }
-
 
 /*------------section icons---------------*/
 
@@ -245,7 +231,6 @@ article p {
     font-size: 18px;
 }
 
-
 .icon-group{
     left: 4%;
     right: 4%;
@@ -253,10 +238,8 @@ article p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-color); 
-    
+    background-color: var(--primary-color);     
 }
-
 
 .icon{
     display: flex;
@@ -264,7 +247,6 @@ article p {
     width: 55px;
     height: 55px;
     background-color: transparent;
-
 }
 
 .icon-column {
@@ -272,8 +254,7 @@ article p {
     margin-right: 4%;
     max-width: 50%;
     display: flex;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly;    
 }
 
 .icon {
@@ -296,8 +277,8 @@ article p {
     background-color: white;
     justify-content: center;
     align-items: center;
-
 }
+
 .corp-group .corp-title{
     padding-top: 10%;
     display: flex;
@@ -318,6 +299,7 @@ article p {
     justify-content: space-around;
     flex-direction: row;
 }
+
 .logo-corp {
     display: flex;
     justify-content: space-around;
@@ -364,26 +346,25 @@ article p {
 .card-group-1-2{
     width: 40%;
 }
+
 .card-group-1  .btn{
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
+
 .card-group-2 .btn{
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 .card-group-2-1 p{
     font-size: 24px;
     color: var(--font-color-1);
 }
-
 
 .card-group-2{ right: 5%;
     left: 5%;
@@ -403,7 +384,6 @@ article p {
 
 .card-group-2 img{
     width: 340px;
-
 }
 
 .card-group-two .btn{
@@ -411,7 +391,6 @@ article p {
     border: 1px solid var(--color-a-1);
     color: var(--color-a-1);
     margin-right: 15px;
-
 }
 
 .card-group-two .btn {
@@ -419,7 +398,6 @@ article p {
     border: 1px solid white;
     margin-right: 15px;
     color: white;
-
 } 
 
 .card-group-two .btn:hover {
@@ -428,10 +406,7 @@ article p {
     border: none;
 }
 
-
-
-
-/*--------media querys---------*/
+/*-------- media querys ---------*/
 
 @media (max-width: 2560px){
     .row-intro-card {
@@ -497,8 +472,7 @@ article p {
     }
     .card-group-2 h4{
         height: 70px;
-    }
-        
+    }    
 }
 
 @media (max-width: 1240px){
@@ -527,7 +501,28 @@ article p {
         height: 70vw;
         right: 4%;
         left: 4%;
-        }  
+        }
+    .card-group-1{
+        max-height: 28vw;
+    }   
+    .card-group-2{
+        max-height: 28vw;
+    } 
+    .card-group-1-2 {
+        width: 50%;
+    }   
+    .card-group-1-2 p{
+        height: 10vw;
+        font-size: 16px;
+    } 
+    .card-group-2-1 p{
+        height: 10vw;
+        font-size: 16px;
+    } 
+    .card-group-2 img{
+        width: 180px;
+    }
+
 }
 
 @media (max-width: 995px) {
@@ -536,7 +531,7 @@ article p {
     }
     .row-intro-card {
         height: 50vw;
-        }
+    }
 }
 
 @media (max-width: 798px) {
@@ -545,13 +540,41 @@ article p {
     }
     .row-intro-card {
         height: 70vw;
-        }
+    }
 
     .icon-group{
         height: 80vw;
         right: 4%;
         left: 4%;
-        }        
+    } 
+    .card-group-1{
+        height: 40vw;
+        max-height: 50vw;
+    }
+    .card-group-2{
+        height: 40vw;
+        max-height: 40vw;
+    }
+    .card-group-1 h4{
+        font-size: 20px;
+    }
+    .card-group-1 p{
+        height: 16vw;
+        font-size: 16px;
+    }          
+    .card-group-2 p{
+        height: 16vw;
+        font-size: 16px;
+        max-height: 40vw;
+    }  
+    .card-group-2 h4{
+        font-size: 20px;
+        max-height: 40vw;
+    }
+    .card-group-2 img{
+        display: none;
+        
+    }
 }
 
 @media (max-width: 425px) {
@@ -563,7 +586,7 @@ article p {
         display: flex;
         flex-direction: column;
     }
-    .card{
+    .card {
         max-width: 90%;
         min-height: 30px;
         max-height: 700px;
@@ -597,14 +620,14 @@ article p {
     }
     .row-intro-card {
         width: 100%;
-        }
+    }
 
     .icon-group{
         height: 260vw;
         right: 5%;
         left: 5%;
         flex-direction: column;
-        }
+    }
 
     .icon-p{
         display: flex;
@@ -642,7 +665,6 @@ article p {
         color: var(--font-color-1);
         font-size: 20px;
     }
-
     .card-group-two{
         width: 100%;
         display: flex;
@@ -652,7 +674,6 @@ article p {
         color: white;
         padding: 5px;
     }
-
     .card-group-1{
         margin: 10px;
         display: flex;
@@ -672,7 +693,6 @@ article p {
         width: 100%;
         font-size: 16px;
     }
-
     .card-group-2 img{
         display: none;
         
@@ -688,8 +708,7 @@ article p {
     .card-group-1 h4{
         text-align: center;
         width: 100%;
-        font-size: 18px;
-        
+        font-size: 18px;    
     }
     .card-group-2 h4{
         text-align: center;
