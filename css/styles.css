@@ -658,7 +658,7 @@ footer .title-foot{
     }
 
     .icon-group{
-        height: 80vw;
+        height: 250vw;
         right: 4%;
         left: 4%;
     } 
@@ -693,24 +693,37 @@ footer .title-foot{
 }
 
 @media (max-width: 425px) {
+    nav{
+        margin: 0rem 0rem 0rem 0rem;
+    }
+    .contenedor {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+    .container{
+        padding: 0;
+    }
     .card-group {
         position: relative;
-        left: 5%;
-        right: 5%;
-        top: 0.1vw;
+        align-items: center;
+        position: relative;
+        top: 150.1vw;
         display: flex;
         flex-direction: column;
     }
-    .card {
-        max-width: 90%;
-        min-height: 30px;
-        max-height: 700px;
+    .card-rounded{
+        width: auto;
     }
-    .container{
-        padding: 40px 0 40px 0;
+    .card {
+        margin:0;
+        max-width: 80%;
+        min-height: 5rem;
+
+    }
+    .card-body h5 {
+        font-size: 14px;
     }
     .row-intro-card {
-        padding: 20px;
+        padding: 10px;
     }
     .container .row{
         width: 100%;
@@ -742,9 +755,9 @@ footer .title-foot{
     .row-intro-card {
         width: 100%;
     }
-
+    /* ----------------------------*/
     .icon-group{
-        height: 260vw;
+        max-height: 260vw;
         right: 5%;
         left: 5%;
         flex-direction: column;
@@ -755,6 +768,9 @@ footer .title-foot{
         justify-content: center;
         max-width: none;
         font-size: 14px;
+        margin: 0rem 1rem 0rem 1rem;
+        padding: 20px;
+    
     }  
     .icon-column{
         max-width: 100%;
@@ -793,16 +809,16 @@ footer .title-foot{
         align-items: center;
         font-family:'Montserrat' ;
         color: white;
-        padding: 5px;
+        padding: 15px;
     }
     .card-group-1{
         margin: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
-        max-width: 90%;
+        max-width: 80%;
         width: 100%;
-        min-height: 80vw;
+        min-height: 70vw;
     }
     .card-group-1-2 p{
         text-align: center;
@@ -822,7 +838,7 @@ footer .title-foot{
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 90%;
+        max-width: 80%;
         width: 100%;
         min-height: 80vw;
     }
@@ -835,5 +851,29 @@ footer .title-foot{
         text-align: center;
         width: 100%;
         font-size: 18px;
+    }
+    .footer{
+        margin:0 0 0 0;
+        flex-direction: column;
+    }
+    .footer-1{
+        width: 90%;
+        align-items: center;
+    }
+    .foot-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-2{
+        width: 80%;
+        margin-top: 1em;
+        
+    }
+    .footer-div-2 a {
+        margin-top: 10px;
+        justify-content: center;
+        font-size: 12px;
+        
     }
 }
