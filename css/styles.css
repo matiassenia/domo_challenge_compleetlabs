@@ -43,9 +43,9 @@ body, html {
 }
 /*------------ nav -----------*/
 nav {
-    
     margin: auto;
 }
+
 
 #navbar-brand{
     color: white;
@@ -59,7 +59,7 @@ nav.bg-gym{
 
 nav.bg-gym a{
     color: var(--font-color-1);
-    font-size: 18px;
+    font-size: var(--font-size-p);
 }
 
 .navbar-nav a:hover::after{
@@ -74,7 +74,11 @@ nav.bg-gym a:hover{
 /* ----------- Hero ------------ */
 
 .container{
-    padding: 80px 0 80px 0;
+    padding: 2em 0 2em 0;
+}
+
+.container .width{
+    width: 40%;
 }
 
 .container .row{
@@ -82,17 +86,25 @@ nav.bg-gym a:hover{
     font-size: var(--font-size-p);   
 }
 
+.row .width{
+    width: 50%;
+}
+
 article h1 {
-    top: 110px;
+    padding-bottom: 1rem;
+    font-size: var(--font-size-t);
     color: white;
     font-family: 'Montserrat';
 }
 
 article p {
+    padding-bottom: 2em;
     color: var(--font-color-1) ;
 }
 
 .row button {
+    padding-top: 10px;
+    width: 15%;
     background-color: transparent; 
     border: 1px solid var(--color-a-1);
     color: var(--color-a-1);
@@ -115,14 +127,14 @@ article p {
 .row-intro-card{
     align-items: center;
     text-align: center;
-    height: 40vw;
+    height: 30vw;
     margin: auto;
     
 }
 
 .row h6 {
     color: white;
-    font-size: 28px;
+    font-size: var(--font-size-t);
     font-family: 'Montserrat';
 }
 
@@ -134,19 +146,17 @@ article p {
 /*-------card group---------*/
 
 .card-group{
-    left: 5%;
-    right: 5%;
+    left: 10em;
     top: 65vw;
     position: absolute;
-    display: flex;
-    justify-content: space-evenly;    
+    display: flex;   
     border-radius: 0; 
 }
 
 .card{
     margin-right: 10px;
     width: 100vh;
-    max-width: 400px;
+    max-width: 356px;
     min-width: 250px;
     margin-bottom: 20px;
     min-height: 380px;
@@ -222,7 +232,7 @@ article p {
 
 .icon-p h4{
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: var(--font-size-t);
     color: white;
 }
 
@@ -280,7 +290,7 @@ article p {
 }
 
 .corp-group .corp-title{
-    padding-top: 10%;
+    padding: 6% 6% 2% 0%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -408,11 +418,14 @@ article p {
 
 /*-------- media querys ---------*/
 
+
+
 @media (max-width: 2560px){
+
     .row-intro-card {
         align-items: center;
         text-align: center;
-        height: 25vw;
+        height: 16vw;
     }
     .card-group {
         top: 35vw;
@@ -536,7 +549,7 @@ article p {
 
 @media (max-width: 798px) {
     .card-group {
-        top: 110vw;
+        top: 130vw;
     }
     .row-intro-card {
         height: 70vw;
@@ -590,6 +603,12 @@ article p {
         max-width: 90%;
         min-height: 30px;
         max-height: 700px;
+    }
+    .container{
+        padding: 40px 0 40px 0;
+    }
+    .row-intro-card {
+        padding: 20px;
     }
     .container .row{
         width: 100%;
