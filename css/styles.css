@@ -278,7 +278,7 @@ article p {
 }
 
 .corp-group .corp-title{
-    padding: 6% 6% 2% 0%;
+    padding: 6% 0% 2% 0%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -385,24 +385,74 @@ article p {
 }
 
 .card-group-two .btn{
-    background-color: transparent; 
-    border: 1px solid var(--color-a-1);
-    color: var(--color-a-1);
+    width: 10em;
+    background-color: transparent;
+    border: 1px solid white; 
+    margin-right: 15px;
+    color: white;
     margin-right: 15px;
 }
 
-.card-group-two .btn {
-    background-color: transparent; 
-    border: 1px solid white;
-    margin-right: 15px;
-    color: white;
-} 
+
 
 .card-group-two .btn:hover {
     background-color: white;
     color: var(--primary-color);
     border: none;
 }
+
+/*----------- footer ------------------*/
+
+footer{
+    margin: 0rem 6rem 0rem 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: var(--bg-body);
+    height: 20rem;    
+    align-items: center;
+}
+
+.footer-1{
+    width: 50%;
+    color: white;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+
+.footer-2{
+    width: 50%;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: var(--font-size-p);
+    font-family: 'Montserrat';
+}
+
+.footer-div-1 h5{
+    margin-bottom: 1.5rem;
+}
+.footer-div-1 p{
+    margin-bottom: 1.5rem;
+    
+
+}
+
+.footer-div-2 a{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+
+
 
 /*-------- media querys ---------*/
 
