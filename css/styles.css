@@ -40,12 +40,13 @@ body, html {
 
 .body{
     background-color: var(--bg-body);
-}
-/*------------ nav -----------*/
-nav {
-    margin: auto;
+    
 }
 
+/*------------ nav -----------*/
+nav {
+    margin: 0rem 6rem 0rem 6rem;
+}
 
 #navbar-brand{
     color: white;
@@ -53,7 +54,6 @@ nav {
 }
 
 nav.bg-gym{
-    
     background-color: transparent;
 }
 
@@ -72,9 +72,8 @@ nav.bg-gym a:hover{
 }
 
 /* ----------- Hero ------------ */
-
-.container{
-    padding: 2em 0 2em 0;
+.contenedor{
+    margin: 0rem 6rem 0rem 6rem;
 }
 
 .container .width{
@@ -120,15 +119,13 @@ article p {
 /* ---------- intro card ----------*/
 
 .row{
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 .row-intro-card{
     align-items: center;
     text-align: center;
-    height: 30vw;
-    margin: auto;
     
 }
 
@@ -146,21 +143,20 @@ article p {
 /*-------card group---------*/
 
 .card-group{
-    left: 10em;
-    top: 65vw;
     position: absolute;
-    display: flex;   
     border-radius: 0; 
+    right: -35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 190vw;
 }
 
 .card{
     margin-right: 10px;
-    width: 100vh;
-    max-width: 356px;
-    min-width: 250px;
+    max-width: 400px;
     margin-bottom: 20px;
-    min-height: 380px;
-    max-height: 1500px;
+    min-height: 26em;
+    max-height: 30em;
 }
 
 .card:last-child {
@@ -171,7 +167,7 @@ article p {
     display:flex;
     align-items: center;
     text-align: center;
-    height: 30%;
+    height: 3em;
     color: black;
     font-family: 'Montserrat';
     font-size: var(--font-size-p);
@@ -192,10 +188,10 @@ article p {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--font-color-1);
-    
-    height: 100%;    
+    padding: 5px;
+    height: 50%;    
 }
 
 .card-body a{
@@ -218,13 +214,20 @@ article p {
 }
 
 /*------------section icons---------------*/
+.icon-group{
+    max-height: 50vw;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);     
+}
 
 .icon-p{
-    left: 4%;
-    right: 4%;
     display: flex;
     max-width: 50%;
-    padding: 0% 5%;
+    margin: 0rem 4rem 0rem 0rem;
+    padding: 5px;
     flex-direction: column;
     font-family:'Montserrat' ;
     
@@ -241,15 +244,6 @@ article p {
     font-size: 18px;
 }
 
-.icon-group{
-    left: 4%;
-    right: 4%;
-    height: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--primary-color);     
-}
 
 .icon{
     display: flex;
@@ -257,6 +251,8 @@ article p {
     width: 55px;
     height: 55px;
     background-color: transparent;
+    align-items: center;
+    margin: 50px;
 }
 
 .icon-column {
@@ -266,14 +262,6 @@ article p {
     display: flex;
     justify-content: space-evenly;    
 }
-
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-}
-
 
 .icon svg path {
     fill: white;
@@ -420,22 +408,32 @@ article p {
 
 
 
-@media (max-width: 2560px){
-
-    .row-intro-card {
-        align-items: center;
-        text-align: center;
-        height: 16vw;
+@media (min-width: 2560px){
+    .icon-group{
+        max-height: 25vw;
+    }
+    .row-intro-card{
+        height: 40vh;
     }
     .card-group {
-        top: 35vw;
+        position: absolute;
+        border-radius: 0;
+        right: -22%;
+        left: 50%;
+        transform: translate(-34%, -50%);
+        top: 38vw;
     }
     .icon-group{
-        height: 40vw;
-        right: 4%;
-        left: 4%;
-        }  
+        padding: 0rem 30rem 0rem 30rem;
+    }
+    .corp-group {
+        padding: 0rem 32rem 0rem 32rem;
+        height: 20vw;
+        
+        
+    }
 }
+
 
 @media (max-width: 1440px){
     .row-intro-card {
@@ -445,16 +443,16 @@ article p {
         margin: auto;
     }
     .card-group {
-        top: 60vw;
+        top: 70vw;
     }
     .icon-group{
-        height: 40vw;
+        height: 60vw;
         right: 4%;
         left: 4%;
         } 
-    
+
     .card-group-1{
-        height: 100vw;
+        height: 50rem;
         display: flex;
         flex-direction: row;
         max-height: 20vw;
@@ -487,7 +485,7 @@ article p {
         height: 70px;
     }    
 }
-
+/*---------------------------------*/
 @media (max-width: 1240px){
     .row-intro-card {
         align-items: center;
