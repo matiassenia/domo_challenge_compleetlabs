@@ -116,7 +116,7 @@ article p {
     border: none;
 }
 
-/* ---------- intro card ----------*/
+/* ---------- intro cards ----------*/
 
 .row{
     padding-top: 1rem;
@@ -140,7 +140,7 @@ article p {
     font-size: var(--font-size-p);
 }
 
-/*-------card group---------*/
+/*------- cards ---------*/
 
 .card-group{
     position: absolute;
@@ -150,6 +150,27 @@ article p {
     transform: translate(-50%, -50%);
     top: 190vw;
 }
+
+.card-group svg path{
+    color: white;
+}
+
+.card-header- a{
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-group svg {
+    
+    width: 6em;
+    height: 6emx;
+    align-self: center;
+    border-radius: 50%;
+    background-color: #376ef8;
+}
+
+
 
 .card{
     margin-right: 10px;
@@ -206,6 +227,27 @@ article p {
     color: var(--color-a-1);
     margin-right: 15px;
 } 
+
+.card-rounded{
+    border-radius: 10px; 
+    animation: rotate 2s infinite;
+}
+.card-group {
+    perspective: 1000px; 
+}
+
+.card-rounded:hover {
+    animation: rotate 1s forwards;
+}
+
+@keyframes rotate {
+        0% {
+          transform: rotateY(0deg); /* La rotación inicial es de 0 grados */
+        }
+        100% {
+          transform: rotateY(360deg); /* La rotación final es de 360 grados */
+        }
+    }
 
 .card-body a:hover {
     background-color: var(--button-color);
@@ -436,6 +478,7 @@ footer{
 }
 .footer-div-1 p{
     margin-bottom: 1.5rem;
+    color: var(--font-color-1);
     
 
 }
@@ -448,9 +491,20 @@ footer{
     font-family: 'Montserrat';
     font-size: 16px;
     text-decoration: none;
+    color: var(--font-color-1);
 }
 
+footer .title-foot{
+    color: white;
+}
 
+.footer svg path {
+    fill: var(--color-a-1)
+}
+
+.foot-icons svg{
+    margin-right:2em;
+}
 
 
 
