@@ -85,6 +85,9 @@ nav.bg-gym a:hover{
     font-size: var(--font-size-p);   
 }
 
+.row-intro-card {
+    min-height: 30vw;
+}
 .row .width{
     width: 50%;
 }
@@ -120,7 +123,7 @@ article p {
 
 .row{
     padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .row-intro-card{
@@ -148,7 +151,7 @@ article p {
     right: -35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 190vw;
+    top: 70vw;
 }
 
 .card-group svg path{
@@ -162,15 +165,13 @@ article p {
     justify-content: center;
 }
 .card-group svg {
-    
-    width: 6em;
-    height: 6emx;
+
+    width: 6rem;
+    height: 6rem;
     align-self: center;
     border-radius: 50%;
     background-color: #376ef8;
 }
-
-
 
 .card{
     margin-right: 10px;
@@ -216,7 +217,6 @@ article p {
 }
 
 .card-body a{
-    width: auto;
     display: flex;
     align-items: center;
 }
@@ -259,7 +259,7 @@ article p {
 
 .icon-group{
     max-height: 50vw;
-    height: 40vw;
+    min-height: 60vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -359,7 +359,7 @@ article p {
 
 .card-group-two {
     position: absolute;
-    top: 150vw;
+    top: 160vw;
     right: 5%;
     left: 5%;
     display: flex;
@@ -383,13 +383,12 @@ article p {
 }
 
 .card-group-1-2 p{
-    width: 15vw;
     color: var(--font-color-1);
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .card-group-2 h4{
-    height: 2em;
+    height: 1em;
 }
 .card-group-1-2{
     width: 60%;
@@ -410,7 +409,7 @@ article p {
 }
 
 .card-group-2-1 p{
-    font-size: 24px;
+    font-size: 16px;
     color: var(--font-color-1);
 }
 
@@ -431,7 +430,7 @@ article p {
 
 
 .card-group-2 img{
-    width: 340px;
+    max-width: 12.7vw;
 }
 
 .card-group-two .btn{
@@ -441,6 +440,7 @@ article p {
     margin-right: 15px;
     color: white;
     margin-right: 15px;
+    
 }
 
 
@@ -519,7 +519,7 @@ footer .title-foot{
 
 /*-------- media querys ---------*/
 
-
+/*
 
 @media (min-width: 2560px){
     .icon-group{
@@ -543,9 +543,23 @@ footer .title-foot{
         padding: 0rem 32rem 0rem 32rem;
         height: 20vw;
         
-        
-    }
+
+    }    
 }
+    .card-group-1 {
+        max-width: 25vw;
+    }
+    .card-group-2 {
+        min-width: 25vw;
+    }
+
+    .card-group-two{ 
+        top: 80vw;
+}
+    .footer{
+        padding:0rem 35rem 0rem 35rem;
+    }
+
 
 
 @media (max-width: 1440px){
