@@ -140,7 +140,7 @@ article p {
     font-size: var(--font-size-p);
 }
 
-/*------- cards ---------*/
+/*----------- cards ---------*/
 
 .card-group{
     position: absolute;
@@ -256,6 +256,7 @@ article p {
 }
 
 /*------------section icons---------------*/
+
 .icon-group{
     max-height: 50vw;
     height: 40vw;
@@ -309,11 +310,11 @@ article p {
     fill: white;
 }
 
-/*---------section corp----------*/
+/*--------- section corp ----------*/
 
 .corp-group{
     top: 10%;
-    height: 30vw;
+    height: 40vw;
     background-color: white;
     justify-content: center;
     align-items: center;
@@ -354,9 +355,13 @@ article p {
     
 }
 
-/*----------card-group-two-------------*/
+/*---------- card-group-two -------------*/
 
 .card-group-two {
+    position: absolute;
+    top: 150vw;
+    right: 5%;
+    left: 5%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -383,8 +388,11 @@ article p {
     font-size: 24px;
 }
 
+.card-group-2 h4{
+    height: 2em;
+}
 .card-group-1-2{
-    width: 40%;
+    width: 60%;
 }
 
 .card-group-1  .btn{
@@ -446,6 +454,7 @@ article p {
 /*----------- footer ------------------*/
 
 footer{
+    min-height: 50vw;
     margin: 0rem 6rem 0rem 6rem;
     display: flex;
     flex-direction: row;
@@ -569,7 +578,7 @@ footer .title-foot{
         font-size: 20px;
     }
     .card-group-2-1 p{
-        width: 20vw;
+        
         color: var(--font-color-1);
         font-size: 20px;
     }
@@ -586,7 +595,8 @@ footer .title-foot{
         height: 2em;
     }
     .card-group-2 h4{
-        height: 70px;
+        
+        height: 2em;
     }    
 }
 /*---------------------------------*/
@@ -756,7 +766,7 @@ footer .title-foot{
     .row-intro-card {
         width: 100%;
     }
-/* ----------------------------*/
+
     .icon-group{
         max-height: 260vw;
         right: 5%;
@@ -804,6 +814,7 @@ footer .title-foot{
         font-size: 20px;
     }
     .card-group-two{
+        top: 920vw;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -859,8 +870,10 @@ footer .title-foot{
         font-size: 18px;
     }
     .footer{
-        margin:0 2em 0 2em;
+        min-height: 250vw;
+        margin:6em 2em 0 2em;
         flex-direction: column;
+        justify-content: flex-end;
     }
     .footer-div-1{
         margin-top: 10vw;
@@ -880,6 +893,9 @@ footer .title-foot{
         width: 80%;
         margin-top: 1em;
         
+    }
+    .footer-div-1 p{
+        margin-bottom: 5.5rem;
     }
     .footer-div-2 a {
         margin-top: 10px;
