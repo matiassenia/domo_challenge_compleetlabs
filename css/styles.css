@@ -909,6 +909,17 @@ footer .title-foot{
         
     }
 }
+
+@media (max-width: 390px){
+    .card-group-two {
+        top: 940vw;
+    }
+    .card-group {
+        top: 192.1vw;
+    }
+}
+
+
 @media (max-width: 375px){
     .card-group-two {
         top: 980vw;
