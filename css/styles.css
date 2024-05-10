@@ -519,100 +519,8 @@ footer .title-foot{
 
 /*-------- media querys ---------*/
 
-/*
-
-@media (min-width: 2560px){
-    .icon-group{
-        max-height: 25vw;
-    }
-    .row-intro-card{
-        height: 40vh;
-    }
-    .card-group {
-        position: absolute;
-        border-radius: 0;
-        right: -22%;
-        left: 50%;
-        transform: translate(-34%, -50%);
-        top: 38vw;
-    }
-    .icon-group{
-        padding: 0rem 30rem 0rem 30rem;
-    }
-    .corp-group {
-        padding: 0rem 32rem 0rem 32rem;
-        height: 20vw;
-        
-
-    }    
-}
-    .card-group-1 {
-        max-width: 25vw;
-    }
-    .card-group-2 {
-        min-width: 25vw;
-    }
-
-    .card-group-two{ 
-        top: 80vw;
-}
-    .footer{
-        padding:0rem 35rem 0rem 35rem;
-    }
 
 
-
-@media (max-width: 1440px){
-    .row-intro-card {
-        align-items: center;
-        text-align: center;
-        height: 35vw;
-        margin: auto;
-    }
-    .card-group {
-        top: 70vw;
-    }
-    .icon-group{
-        height: 60vw;
-        right: 4%;
-        left: 4%;
-        } 
-
-    .card-group-1{
-        height: 50rem;
-        display: flex;
-        flex-direction: row;
-        max-height: 20vw;
-        justify-content: start;
-        padding: 10px;
-    }
-    .card-group-1-2 p{
-        width: 25vw;
-        color: var(--font-color-1);
-        font-size: 20px;
-    }
-    .card-group-2-1 p{
-        
-        color: var(--font-color-1);
-        font-size: 20px;
-    }
-    .card-group-2 img{
-        width: 18vw;
-    }
-    .card-group-2{
-        padding: 10px;
-        height: 45vw;
-        max-height: 20vw;
-        padding-top: 10px;
-    }
-    .card-group-1 h4{
-        height: 2em;
-    }
-    .card-group-2 h4{
-        
-        height: 2em;
-    }    
-}
 /*---------------------------------*/
 @media (max-width: 1240px){
     .row-intro-card {
@@ -643,12 +551,15 @@ footer .title-foot{
         }
     .card-group-1{
         max-height: 28vw;
+        height: 23vw;
     }   
     .card-group-2{
         max-height: 28vw;
+        height: 23vw;
+        padding: 20px;
     } 
     .card-group-1-2 {
-        width: 50%;
+        width: 90%;
     }   
     .card-group-1-2 p{
         height: 10vw;
@@ -659,10 +570,20 @@ footer .title-foot{
         font-size: 16px;
     } 
     .card-group-2 img{
-        width: 180px;
+        width: 200px;
+        max-width: 200px;
     }
-
+    .card-group {
+        top: 115vw;
+    }
+    .icon-group {
+        min-height: 77vw
+    }
+    .card-group-two {
+        top: 228vw;
+    }    
 }
+
 
 @media (max-width: 995px) {
     .card-group {
@@ -673,19 +594,30 @@ footer .title-foot{
     }
 }
 
-@media (max-width: 798px) {
+@media (max-width: 768px) {
     .card-group {
         top: 130vw;
     }
     .row-intro-card {
         height: 70vw;
     }
-
+    .row .width {
+        width: 80%;
+    }
+    .card-group {
+        top: 144vw;
+    }
+    .row button {
+        width: 40%;
+    }
     .icon-group{
         height: 250vw;
         right: 4%;
         left: 4%;
     } 
+    .card-group {
+        top: 154vw;
+    }
     .card-group-1{
         height: 40vw;
         max-height: 50vw;
@@ -713,6 +645,27 @@ footer .title-foot{
     .card-group-2 img{
         display: none;
         
+    }
+    .icon-group {
+        max-height: 122vw;
+    }  
+    .icon-p {
+        padding: 45px;
+    }
+
+    .card-group-two {
+        
+        top: 320vw;
+    }
+    .card-group-1-2 {
+        width: 90%;
+    }
+    .card-group-2 {
+        padding: 25px;
+    }
+    .footer{
+        min-height: 50em;
+        margin: 1rem 2rem 0rem 2rem;
     }
 }
 /*--------------------------------------*/
@@ -828,11 +781,13 @@ footer .title-foot{
         font-size: 20px;
     }
     .card-group-two{
-        top: 920vw;
+        top: 865vw;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        right: 0;
+        left: 0;
         font-family:'Montserrat' ;
         color: white;
         padding: 15px;
@@ -866,6 +821,7 @@ footer .title-foot{
         
     }
     .card-group-2{
+        padding: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -884,7 +840,7 @@ footer .title-foot{
         font-size: 18px;
     }
     .footer{
-        min-height: 250vw;
+        min-height: 300vw;
         margin:6em 2em 0 2em;
         flex-direction: column;
         justify-content: flex-end;
@@ -904,8 +860,8 @@ footer .title-foot{
         align-items: center;
     }
     .footer-2{
-        width: 80%;
-        margin-top: 1em;
+        width: 100%;
+        margin: 4em;
         
     }
     .footer-div-1 p{
@@ -918,3 +874,38 @@ footer .title-foot{
         
     }
 }
+
+
+@media (max-width: 375px){
+    .card-group-two {
+        top: 980vw;
+    }
+}
+
+@media (max-width: 320px){
+    .card-group {
+        top: 245vw;
+    }
+    .card-group-two {
+        top: 1195vw;
+    }
+    .icon-group {
+        height: 390vw;
+    }
+    .icon-group {
+        max-height: 335vw;
+    }
+    .footer{
+        min-height: 350vw;
+    }
+    .card-group-1-2 p {
+        font-size: 12px;
+    }
+    .card-group-2-1 p {
+        font-size: 12px;
+    }
+    .row .width {
+    width: 90%;
+    }
+}
+
