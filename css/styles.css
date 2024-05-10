@@ -17,7 +17,7 @@
 
 /*------------- body --------------*/
 body {
-    background-image: url("/images/asset-background.jpg");
+    background-image: url("../images/asset-background.jpg");
     background-color: var(--bg-body);
     background-size: contain;
     background-position: right;
