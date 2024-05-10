@@ -120,7 +120,6 @@ article p {
 }
 
 /* ---------- intro cards ----------*/
-
 .row{
     padding-top: 1rem;
     padding-bottom: 3rem;
@@ -144,7 +143,6 @@ article p {
 }
 
 /*----------- cards ---------*/
-
 .card-group{
     position: absolute;
     border-radius: 0; 
@@ -256,7 +254,6 @@ article p {
 }
 
 /*------------section icons---------------*/
-
 .icon-group{
     max-height: 50vw;
     min-height: 60vw;
@@ -311,7 +308,6 @@ article p {
 }
 
 /*--------- section corp ----------*/
-
 .corp-group{
     top: 10%;
     height: 40vw;
@@ -356,7 +352,6 @@ article p {
 }
 
 /*---------- card-group-two -------------*/
-
 .card-group-two {
     position: absolute;
     top: 160vw;
@@ -452,7 +447,6 @@ article p {
 }
 
 /*----------- footer ------------------*/
-
 footer{
     min-height: 50vw;
     margin: 0rem 6rem 0rem 6rem;
@@ -515,13 +509,20 @@ footer .title-foot{
     margin-right:2em;
 }
 
-
-
 /*-------- media querys ---------*/
+@media (min-width: 2560px){
+    .card-group{
+        right: 0;
+        top: 50vw;
+    }
+    .card-group-two{
+        top: 145vw;
+    }
+    .footer{
+        margin: 0rem 25rem 0rem 25rem;
+    }
+}
 
-
-
-/*---------------------------------*/
 @media (max-width: 1240px){
     .row-intro-card {
         align-items: center;
@@ -583,7 +584,6 @@ footer .title-foot{
         top: 228vw;
     }    
 }
-
 
 @media (max-width: 995px) {
     .card-group {
@@ -652,7 +652,6 @@ footer .title-foot{
     .icon-p {
         padding: 45px;
     }
-
     .card-group-two {
         
         top: 320vw;
@@ -668,7 +667,6 @@ footer .title-foot{
         margin: 1rem 2rem 0rem 2rem;
     }
 }
-/*--------------------------------------*/
 
 @media (max-width: 425px) {
     nav{
@@ -695,7 +693,6 @@ footer .title-foot{
         margin:0;
         max-width: 80%;
         min-height: 5rem;
-
     }
     .card-body h5 {
         font-size: 14px;
@@ -733,14 +730,12 @@ footer .title-foot{
     .row-intro-card {
         width: 100%;
     }
-
     .icon-group{
         max-height: 260vw;
         right: 5%;
         left: 5%;
         flex-direction: column;
     }
-
     .icon-p{
         display: flex;
         justify-content: center;
@@ -748,7 +743,6 @@ footer .title-foot{
         font-size: 14px;
         margin: 0rem 1rem 0rem 1rem;
         padding: 20px;
-    
     }  
     .icon-column{
         max-width: 100%;
@@ -760,12 +754,9 @@ footer .title-foot{
         justify-content: center;
         align-items: center;
     }
-    
-
     .card-group-1-2{
         width: 100%;
     }
-
     .card-group-1-2 p{
         width: 100%;
         color: var(--font-color-1);
@@ -774,7 +765,6 @@ footer .title-foot{
         justify-content: center;
         align-items: center;
     }
-
     .card-group-2-1 p{
         width: 25vw;
         color: var(--font-color-1);
@@ -796,7 +786,6 @@ footer .title-foot{
         
         width: 100%;
     }
-
     .card-group-1{
         margin: 10px;
         display: flex;
@@ -874,14 +863,11 @@ footer .title-foot{
         
     }
 }
-
-
 @media (max-width: 375px){
     .card-group-two {
         top: 980vw;
     }
 }
-
 @media (max-width: 320px){
     .card-group {
         top: 245vw;
