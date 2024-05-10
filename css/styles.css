@@ -76,6 +76,19 @@ nav.bg-gym a:hover{
     margin: 0rem 6rem 0rem 6rem;
 }
 
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.root {
+    animation: fade-in 6s ease;
+}
+
 .container .width{
     width: 40%;
 }
@@ -151,6 +164,20 @@ article p {
     transform: translate(-50%, -50%);
     top: 70vw;
 }
+
+@keyframes slide-from-left {
+    from {
+        transform: translateX(-900%);
+    }
+    to {
+        transform: translateX(10);
+    }
+}
+
+.card-group {
+    animation: slide-from-left 4.5s ease;
+}
+
 
 .card-group svg path{
     color: white;
@@ -234,6 +261,9 @@ article p {
     perspective: 1000px; 
 }
 
+
+
+
 .card-rounded:hover {
     animation: rotate 1s forwards;
 }
@@ -315,6 +345,22 @@ article p {
     justify-content: center;
     align-items: center;
 }
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.corp-group {
+    animation: fade-in 6s ease;
+}
+
+
+
 
 .corp-group .corp-title{
     padding: 6% 0% 2% 0%;
