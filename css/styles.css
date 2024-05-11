@@ -105,6 +105,13 @@ nav.bg-gym a:hover{
 
 /*-------------animation javascript--------------------*/
 
+[data-animation="left"] {
+    opacity: var(--opacity, 0); 
+    transform: translateX(100%) var(--transform, translate(10));
+    transition: opacity .6s ease-in .3s, transform .6s ease-in .3s; 
+}
+
+
 [data-animation="show"] {
     opacity: var(--opacity, 0); 
     transform: translateY(100%) var(--transform, translate(0));
