@@ -39,8 +39,7 @@ body, html {
 }
 
 .body{
-    background-color: var(--bg-body);
-    
+    background-color: var(--bg-body);    
 }
 
 /*------------ nav -----------*/
@@ -71,11 +70,12 @@ nav.bg-gym a:hover{
     color: white;
 }
 
-/* ----------- Hero ------------ */
-.contenedor{
-    margin: 0rem 6rem 0rem 6rem;
+#svg-img{
+    margin-right: 0.1;
+    margin-bottom: 0.1em;
 }
 
+/*-------------- key frames -------------------*/
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -85,8 +85,55 @@ nav.bg-gym a:hover{
     }
 }
 
+@keyframes slide-from-left {
+    from {
+        transform: translateX(-900%);
+    }
+    to {
+        transform: translateX(10);
+    }
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotateY(0deg); /* La rotación inicial es de 0 grados */
+    }
+    100% {
+      transform: rotateY(360deg); /* La rotación final es de 360 grados */
+    }
+}
+
+/*-------------animation javascript--------------------*/
+
+[data-animation="show"] {
+    opacity: var(--opacity, 0); 
+    transform: translateY(100%) var(--transform, translate(0));
+    transition: opacity .6s ease-in .3s, transform .6s ease-in .3s; 
+}
+
+.unset{
+    opacity: var(--opacity);
+    transform: var(--transform);
+}
+
+
+/*----------------------------------------------------------------------*/
+.card-group  {
+    animation: slide-from-left 3.5s ease;
+}
+
+/* ---------------- Hero -------------------- */
+.contenedor{
+    margin: 0rem 6rem 0rem 6rem;
+}
+
 .root {
     animation: fade-in 6s ease;
+}
+
+.root {
+    opacity: 1;
+    animation-fill-mode: forwards ;
 }
 
 .container .width{
@@ -165,20 +212,6 @@ article p {
     top: 70vw;
 }
 
-@keyframes slide-from-left {
-    from {
-        transform: translateX(-900%);
-    }
-    to {
-        transform: translateX(10);
-    }
-}
-
-.card-group {
-    animation: slide-from-left 4.5s ease;
-}
-
-
 .card-group svg path{
     color: white;
 }
@@ -189,6 +222,7 @@ article p {
     align-items: center;
     justify-content: center;
 }
+
 .card-group svg {
 
     width: 6rem;
@@ -261,21 +295,9 @@ article p {
     perspective: 1000px; 
 }
 
-
-
-
 .card-rounded:hover {
     animation: rotate 1s forwards;
 }
-
-@keyframes rotate {
-        0% {
-          transform: rotateY(0deg); /* La rotación inicial es de 0 grados */
-        }
-        100% {
-          transform: rotateY(360deg); /* La rotación final es de 360 grados */
-        }
-    }
 
 .card-body a:hover {
     background-color: var(--button-color);
@@ -314,7 +336,6 @@ article p {
     font-size: 18px;
 }
 
-
 .icon{
     display: flex;
     justify-content: space-around;
@@ -345,7 +366,6 @@ article p {
     justify-content: center;
     align-items: center;
 }
-
 
 .corp-group .corp-title{
     padding: 6% 0% 2% 0%;
@@ -454,7 +474,6 @@ article p {
     justify-content: space-evenly;
 }
 
-
 .card-group-2 img{
     max-width: 12.7vw;
 }
@@ -468,8 +487,6 @@ article p {
     margin-right: 15px;
     
 }
-
-
 
 .card-group-two .btn:hover {
     background-color: white;
@@ -497,7 +514,6 @@ footer{
     flex-direction: column;
 }
 
-
 .footer-2{
     width: 50%;
     color: white;
@@ -513,8 +529,6 @@ footer{
 .footer-div-1 p{
     margin-bottom: 1.5rem;
     color: var(--font-color-1);
-    
-
 }
 
 .footer-div-2 a{
