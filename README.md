@@ -1,3 +1,5 @@
-Sitio en construcción
+Challengue Front End Developer-Domo.
 
-Link: https://matiassenia.github.io/domo_challenge_compleetlabs/
+Links: 
+GitHub Pages: https://matiassenia.github.io/domo_challenge_compleetlabs/
+Netlify : https://domo-challengue-ms.netlify.app
